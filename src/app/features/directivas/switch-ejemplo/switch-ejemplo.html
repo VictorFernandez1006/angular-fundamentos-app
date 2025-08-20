@@ -1,0 +1,18 @@
+<h3>Ejemplo: @ switch</h3>
+<button class="btn btn-primary mb-3" (click)="cambiarEstado()">
+  Cambiar estado (actual: {{ estado}})
+</button>
+@switch (estado) {
+  @case ('pendiente') {
+    <p class="alert alert-warning">El proceso está pendiente</p>
+  }
+    @case ('en-proceso') {
+    <p class="alert alert-info">El proceso está en ejecución</p>
+  }
+    @case ('completado') {
+    <p class="alert alert-success">El proceso fue completado</p>
+  }
+  @default {
+    <p class="alert alert-dark">Estado desconocido.</p>
+  }
+}

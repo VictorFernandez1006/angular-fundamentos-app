@@ -1,0 +1,13 @@
+<h3>Ejemplo: @ defer</h3>
+
+@defer {
+  <p class="alert alert-success">
+    Este contenido se carga de forma diferida.
+  </p>
+} @placeholder {
+  <p class="text-muted">Cargando contenido...</p>
+} @loading {
+  <p class="text-primary">En proceso...</p>
+} @error {
+  <p class="text-danger">Error al cargar.</p>
+}

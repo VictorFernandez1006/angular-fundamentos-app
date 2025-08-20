@@ -6,6 +6,8 @@ import { IfEjemplo } from './features/directivas/if-ejemplo/if-ejemplo';
 import { ForEjemplo } from './features/directivas/for-ejemplo/for-ejemplo';
 import { NgClassEjemplo } from './features/directivas/ng-class-ejemplo/ng-class-ejemplo';
 import { NgStyleEjemplo } from './features/directivas/ng-style-ejemplo/ng-style-ejemplo';
+import { SwitchEjemplo } from './features/directivas/switch-ejemplo/switch-ejemplo';
+import { DeferEjemplo } from './features/directivas/defer-ejemplo/defer-ejemplo';
 
 export const routes: Routes = [
   {
@@ -25,7 +27,9 @@ export const routes: Routes = [
       {path: 'if-ejemplo', component: IfEjemplo},
       {path: 'for-ejemplo',component: ForEjemplo},
       {path: 'ng-class-ejemplo',component: NgClassEjemplo},
-      {path: 'ng-style-ejemplo',component: NgStyleEjemplo}
+      {path: 'ng-style-ejemplo',component: NgStyleEjemplo},
+      {path: 'switch-ejemplo',component: SwitchEjemplo},
+      {path: 'defer-ejemplo',component: DeferEjemplo}
     ]
   }
 ];
