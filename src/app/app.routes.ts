@@ -8,6 +8,8 @@ import { NgClassEjemplo } from './features/directivas/ng-class-ejemplo/ng-class-
 import { NgStyleEjemplo } from './features/directivas/ng-style-ejemplo/ng-style-ejemplo';
 import { SwitchEjemplo } from './features/directivas/switch-ejemplo/switch-ejemplo';
 import { DeferEjemplo } from './features/directivas/defer-ejemplo/defer-ejemplo';
+import { EventBindingPage } from './features/event-binding/event-binding-page/event-binding-page';
+import { EventBindingEjemplo } from './features/event-binding/event-binding-ejemplo/event-binding-ejemplo';
 
 export const routes: Routes = [
   {
@@ -30,6 +32,13 @@ export const routes: Routes = [
       {path: 'ng-style-ejemplo',component: NgStyleEjemplo},
       {path: 'switch-ejemplo',component: SwitchEjemplo},
       {path: 'defer-ejemplo',component: DeferEjemplo}
+    ]
+  },
+  {
+    path: 'event-binding',
+    component: EventBindingPage,
+    children: [
+      {path: 'ejemplo', component: EventBindingEjemplo}
     ]
   }
 ];
