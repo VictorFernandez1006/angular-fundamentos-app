@@ -1,0 +1,11 @@
+<h3>Ejemplo: @ for</h3>
+<ul class="list-group w-50">
+  @for (producto of productos; track producto.id; let i = $index) {
+    <li class="list-group">
+      {{ i + 1}} : {{ producto.nombre}}
+    </li>
+  }
+</ul>
+
+<a routerLink=".." class="btn btn-outline-secondary mt-3">Volver</a>
+
