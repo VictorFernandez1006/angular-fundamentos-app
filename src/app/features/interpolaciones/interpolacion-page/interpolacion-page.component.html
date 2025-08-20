@@ -1,0 +1,15 @@
+<h2>Qué es la interpolación en Angular</h2>
+<p>La interpolación es una forma de mostrar datos del componente en la plantilla HTML usando la sintxis
+  <code ngNonBindable>{{expresion}}</code>
+</p>
+<ul>
+  <li>Permite insertar valores dinámicos desde el componente al HTML.</li>
+  <li>Se usa para mostrar texto, variables o resultados de expresiones simples.</li>
+  <li>No se debe usar para llamadas a funciones que modifiquen datos (efectis secundarios)</li>
+</ul>
+
+<h3>Ejemplo simple de interpolación:</h3>
+<pre><code>{{ nombre}}</code></pre>
+<a routerLink="ejemplo" class="btn btn-primary mt-3">Ver ejemplo Funcional</a>
+<!-- Aquí se cargará el comnonente hijo -->
+<router-outlet></router-outlet>
