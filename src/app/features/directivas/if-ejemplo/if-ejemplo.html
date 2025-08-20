@@ -1,0 +1,10 @@
+<h3>Ejemplo: @ if</h3>
+<button class="btn btn-info mb-3" (click)="alternar()">
+  {{ mostrar ? 'Ocultar' : 'Mostrar'}} mensaje
+</button>
+@if (mostrar) {
+  <div class="alert alert-success">
+    El mensaje está visible gracias a @ if
+  </div>
+}
+
