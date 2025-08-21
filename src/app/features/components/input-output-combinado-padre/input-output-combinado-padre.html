@@ -1,0 +1,11 @@
+<h2>Padre ↔ Hijo: Input() + Output()</h2>
+<app-input-output-combinado
+  [usuario]="usuario"
+  (saludar)="recibirSaludo($event)"
+>
+</app-input-output-combinado>
+@if (saludoDelHijo){
+  <div class="alert alert-info mt-3">
+    Mensaje recibido del hijo: <strong>{{saludoDelHijo }}</strong>
+  </div>
+}

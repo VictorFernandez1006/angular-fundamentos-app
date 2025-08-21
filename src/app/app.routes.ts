@@ -10,6 +10,11 @@ import { SwitchEjemplo } from './features/directivas/switch-ejemplo/switch-ejemp
 import { DeferEjemplo } from './features/directivas/defer-ejemplo/defer-ejemplo';
 import { EventBindingPage } from './features/event-binding/event-binding-page/event-binding-page';
 import { EventBindingEjemplo } from './features/event-binding/event-binding-ejemplo/event-binding-ejemplo';
+import { ComunicacionInput } from './features/components/comunicacion-input/comunicacion-input';
+import { ComponentsPage } from './features/components/components-page/components-page';
+import { ComunicacionInputPadre } from './features/components/comunicacion-input-padre/comunicacion-input-padre';
+import { ComunicacionOutputPadre } from './features/components/comunicacion-output-padre/comunicacion-output-padre';
+import { InputOutputCombinadoPadre } from './features/components/input-output-combinado-padre/input-output-combinado-padre';
 
 export const routes: Routes = [
   {
@@ -40,5 +45,14 @@ export const routes: Routes = [
     children: [
       {path: 'ejemplo', component: EventBindingEjemplo}
     ]
-  }
+  },
+  {
+  path: 'components',
+  component: ComponentsPage,
+  children: [
+    {path: 'input', component: ComunicacionInputPadre},
+    {path: 'output', component: ComunicacionOutputPadre},
+    {path: 'input-output', component: InputOutputCombinadoPadre}
+  ]
+}
 ];

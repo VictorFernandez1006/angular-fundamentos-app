@@ -1,0 +1,6 @@
+<h2>Hijo → Padre con Output()</h2>
+<app-comunicacion-output
+  (mensajeEnviado)="recibirMensaje($event)"></app-comunicacion-output>
+  <div class="alert alert-success mt-3">
+    Mensaje recibido del hijo: <strong>{{ mensajeDelHijo }}</strong>
+  </div>
