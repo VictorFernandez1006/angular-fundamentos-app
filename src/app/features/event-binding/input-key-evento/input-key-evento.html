@@ -1,0 +1,7 @@
+<h3>Evento (keyup)</h3>
+<input type="text"
+  class="form-control w-50"
+  placeholder="Escribe tu nombre..."
+  (keyup)="actualizarNombre($event)"
+/>
+<p class="mt-2">Texto ingresado: <strong>{{ nombre }}</strong></p>
