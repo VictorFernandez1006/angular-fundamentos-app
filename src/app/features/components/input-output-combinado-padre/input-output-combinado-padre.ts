@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { InputOutputCombinado } from '../input-output-combinado/input-output-combinado';
-import { ComunicacionInput } from "../comunicacion-input/comunicacion-input";
 @Component({
   selector: 'app-input-output-combinado-padre',
   standalone: true,
-  imports: [InputOutputCombinado, ComunicacionInput],
+  imports: [InputOutputCombinado],
   templateUrl: './input-output-combinado-padre.html',
   styleUrl: './input-output-combinado-padre.css'
 })
