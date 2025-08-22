@@ -1,0 +1,8 @@
+<h3>Categorías (consumidas desde un servicio)</h3>
+<ul class="list-group mt-3">
+   @for (categoria of categorias; track categoria.id) {
+      <li class="list-group-item">
+        <strong>{{ categoria.name}}</strong>: {{ categoria.description }}
+      </li>
+   }
+</ul>

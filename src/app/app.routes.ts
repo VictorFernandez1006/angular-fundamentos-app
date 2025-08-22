@@ -15,6 +15,8 @@ import { ComponentsPage } from './features/components/components-page/components
 import { ComunicacionInputPadre } from './features/components/comunicacion-input-padre/comunicacion-input-padre';
 import { ComunicacionOutputPadre } from './features/components/comunicacion-output-padre/comunicacion-output-padre';
 import { InputOutputCombinadoPadre } from './features/components/input-output-combinado-padre/input-output-combinado-padre';
+import { ServiciosPage } from './features/servicios-page/servicios-page';
+import { ServicioEjemplo } from './features/servicio-ejemplo/servicio.ejemplo/servicio.ejemplo';
 
 export const routes: Routes = [
   {
@@ -53,6 +55,13 @@ export const routes: Routes = [
     {path: 'input', component: ComunicacionInputPadre},
     {path: 'output', component: ComunicacionOutputPadre},
     {path: 'input-output', component: InputOutputCombinadoPadre}
+  ]
+},
+  {
+  path: 'servicios',
+  component: ServiciosPage,
+  children: [
+    {path: 'ejemplo', component: ServicioEjemplo}
   ]
 }
 ];
